@@ -1,0 +1,10 @@
+programa: codifix
+version: 2.1
+(C) 10/04/04 
+autor: Cristian Bagemihl
+email: cristianb@iespana.es
+
+Código fuente en la carpeta fuente listo para ser compilado con Dev-C++.
+Si quieres compilarlo con otro compilador el código fuente está en main.cpp.
+
+Para cualquier duda, bug o comentario no dudes en mandarme un email.

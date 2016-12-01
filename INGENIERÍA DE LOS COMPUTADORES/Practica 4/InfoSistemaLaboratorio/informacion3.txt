@@ -1,0 +1,315 @@
+clls13i-1
+    descripción: Computer
+    anchura: 32 bits
+  *-core
+       descripción: Motherboard
+       id físico: 0
+     *-memory
+          descripción: Memoria de sistema
+          id físico: 0
+          tamaño: 4010MiB
+     *-cpu
+          producto: Intel(R) Pentium(R) CPU G840 @ 2.80GHz
+          fabricante: Intel Corp.
+          id físico: 1
+          información del bus: cpu@0
+          versión: 6.10.7
+          serie: 0002-06A7-0000-0000-0000-0000
+          tamaño: 2200MHz
+          capacidad: 2200MHz
+          anchura: 64 bits
+          capacidades: fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp x86-64 constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave lahf_lm arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid cpufreq
+          configuración: id=0
+        *-logicalcpu:0
+             descripción: CPU lógica
+             id físico: 0.1
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:1
+             descripción: CPU lógica
+             id físico: 0.2
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:2
+             descripción: CPU lógica
+             id físico: 0.3
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:3
+             descripción: CPU lógica
+             id físico: 0.4
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:4
+             descripción: CPU lógica
+             id físico: 0.5
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:5
+             descripción: CPU lógica
+             id físico: 0.6
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:6
+             descripción: CPU lógica
+             id físico: 0.7
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:7
+             descripción: CPU lógica
+             id físico: 0.8
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:8
+             descripción: CPU lógica
+             id físico: 0.9
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:9
+             descripción: CPU lógica
+             id físico: 0.a
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:10
+             descripción: CPU lógica
+             id físico: 0.b
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:11
+             descripción: CPU lógica
+             id físico: 0.c
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:12
+             descripción: CPU lógica
+             id físico: 0.d
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:13
+             descripción: CPU lógica
+             id físico: 0.e
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:14
+             descripción: CPU lógica
+             id físico: 0.f
+             anchura: 64 bits
+             capacidades: logical
+        *-logicalcpu:15
+             descripción: CPU lógica
+             id físico: 0.10
+             anchura: 64 bits
+             capacidades: logical
+     *-pci
+          descripción: Host bridge
+          producto: 2nd Generation Core Processor Family DRAM Controller
+          fabricante: Intel Corporation
+          id físico: 100
+          información del bus: pci@0000:00:00.0
+          versión: 09
+          anchura: 32 bits
+          reloj: 33MHz
+        *-pci:0
+             descripción: PCI bridge
+             producto: Xeon E3-1200/2nd Generation Core Processor Family PCI Express Root Port
+             fabricante: Intel Corporation
+             id físico: 1
+             información del bus: pci@0000:00:01.0
+             versión: 09
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuración: driver=pcieport
+             recursos: irq:40 ioport:e000(size=4096) memoria:f6000000-f70fffff ioport:e8000000(size=167772160)
+           *-display
+                descripción: VGA compatible controller
+                producto: GF119 [GeForce GT 520]
+                fabricante: NVIDIA Corporation
+                id físico: 0
+                información del bus: pci@0000:01:00.0
+                versión: a1
+                anchura: 64 bits
+                reloj: 33MHz
+                capacidades: vga_controller bus_master cap_list rom
+                configuración: driver=nvidia latency=0
+                recursos: irq:16 memoria:f6000000-f6ffffff memoria:e8000000-efffffff memoria:f0000000-f1ffffff ioport:e000(size=128) memoria:f7000000-f707ffff
+           *-multimedia
+                descripción: Audio device
+                producto: HDMI Audio stub
+                fabricante: NVIDIA Corporation
+                id físico: 0.1
+                información del bus: pci@0000:01:00.1
+                versión: a1
+                anchura: 32 bits
+                reloj: 33MHz
+                capacidades: bus_master cap_list
+                configuración: driver=snd_hda_intel latency=0
+                recursos: irq:17 memoria:f7080000-f7083fff
+        *-communication
+             descripción: Communication controller
+             producto: 6 Series/C200 Series Chipset Family MEI Controller #1
+             fabricante: Intel Corporation
+             id físico: 16
+             información del bus: pci@0000:00:16.0
+             versión: 04
+             anchura: 64 bits
+             reloj: 33MHz
+             capacidades: bus_master cap_list
+             configuración: driver=mei latency=0
+             recursos: irq:50 memoria:f7329000-f732900f
+        *-network
+             descripción: Ethernet interface
+             producto: 82579V Gigabit Network Connection
+             fabricante: Intel Corporation
+             id físico: 19
+             información del bus: pci@0000:00:19.0
+             nombre lógico: eth0
+             versión: 05
+             serie: e0:69:95:dd:bd:3a
+             tamaño: 100Mbit/s
+             capacidad: 1Gbit/s
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+             configuración: autonegotiation=on broadcast=yes driver=e1000e driverversion=1.5.1-k duplex=full firmware=0.13-4 ip=172.21.240.51 latency=0 multicast=yes port=twisted pair speed=100Mbit/s
+             recursos: irq:49 memoria:f7300000-f731ffff memoria:f7328000-f7328fff ioport:f040(size=32)
+        *-usb:0
+             descripción: USB controller
+             producto: 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2
+             fabricante: Intel Corporation
+             id físico: 1a
+             información del bus: pci@0000:00:1a.0
+             versión: 05
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: ehci bus_master cap_list
+             configuración: driver=ehci_hcd latency=0
+             recursos: irq:16 memoria:f7327000-f73273ff
+        *-multimedia
+             descripción: Audio device
+             producto: 6 Series/C200 Series Chipset Family High Definition Audio Controller
+             fabricante: Intel Corporation
+             id físico: 1b
+             información del bus: pci@0000:00:1b.0
+             versión: 05
+             anchura: 64 bits
+             reloj: 33MHz
+             capacidades: bus_master cap_list
+             configuración: driver=snd_hda_intel latency=0
+             recursos: irq:51 memoria:f7320000-f7323fff
+        *-pci:1
+             descripción: PCI bridge
+             producto: 6 Series/C200 Series Chipset Family PCI Express Root Port 1
+             fabricante: Intel Corporation
+             id físico: 1c
+             información del bus: pci@0000:00:1c.0
+             versión: b5
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuración: driver=pcieport
+             recursos: irq:41
+           *-pci
+                descripción: PCI bridge
+                producto: Integrated Technology Express, Inc.
+                fabricante: Integrated Technology Express, Inc.
+                id físico: 0
+                información del bus: pci@0000:02:00.0
+                versión: 10
+                anchura: 32 bits
+                reloj: 33MHz
+                capacidades: pci normal_decode bus_master cap_list
+        *-pci:2
+             descripción: PCI bridge
+             producto: 6 Series/C200 Series Chipset Family PCI Express Root Port 2
+             fabricante: Intel Corporation
+             id físico: 1c.1
+             información del bus: pci@0000:00:1c.1
+             versión: b5
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuración: driver=pcieport
+             recursos: irq:42 ioport:d000(size=4096) memoria:f7200000-f72fffff
+           *-storage
+                descripción: SATA controller
+                producto: 88SE9172 SATA 6Gb/s Controller
+                fabricante: Marvell Technology Group Ltd.
+                id físico: 0
+                información del bus: pci@0000:04:00.0
+                versión: 11
+                anchura: 32 bits
+                reloj: 33MHz
+                capacidades: storage ahci_1.0 bus_master cap_list rom
+                configuración: driver=ahci latency=0
+                recursos: irq:45 ioport:d040(size=8) ioport:d030(size=4) ioport:d020(size=8) ioport:d010(size=4) ioport:d000(size=16) memoria:f7210000-f72101ff memoria:f7200000-f720ffff
+        *-pci:3
+             descripción: PCI bridge
+             producto: 6 Series/C200 Series Chipset Family PCI Express Root Port 4
+             fabricante: Intel Corporation
+             id físico: 1c.3
+             información del bus: pci@0000:00:1c.3
+             versión: b5
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: pci normal_decode bus_master cap_list
+             configuración: driver=pcieport
+             recursos: irq:43 memoria:f7100000-f71fffff
+           *-usb
+                descripción: USB controller
+                producto: uPD720200 USB 3.0 Host Controller
+                fabricante: NEC Corporation
+                id físico: 0
+                información del bus: pci@0000:05:00.0
+                versión: 04
+                anchura: 64 bits
+                reloj: 33MHz
+                capacidades: xhci bus_master cap_list
+                configuración: driver=xhci_hcd latency=0
+                recursos: irq:19 memoria:f7100000-f7101fff
+        *-usb:1
+             descripción: USB controller
+             producto: 6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1
+             fabricante: Intel Corporation
+             id físico: 1d
+             información del bus: pci@0000:00:1d.0
+             versión: 05
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: ehci bus_master cap_list
+             configuración: driver=ehci_hcd latency=0
+             recursos: irq:23 memoria:f7326000-f73263ff
+        *-isa
+             descripción: ISA bridge
+             producto: H61 Express Chipset Family LPC Controller
+             fabricante: Intel Corporation
+             id físico: 1f
+             información del bus: pci@0000:00:1f.0
+             versión: 05
+             anchura: 32 bits
+             reloj: 33MHz
+             capacidades: isa bus_master cap_list
+             configuración: latency=0
+        *-storage
+             descripción: SATA controller
+             producto: 6 Series/C200 Series Chipset Family SATA AHCI Controller
+             fabricante: Intel Corporation
+             id físico: 1f.2
+             información del bus: pci@0000:00:1f.2
+             versión: 05
+             anchura: 32 bits
+             reloj: 66MHz
+             capacidades: storage ahci_1.0 bus_master cap_list
+             configuración: driver=ahci latency=0
+             recursos: irq:44 ioport:f090(size=8) ioport:f080(size=4) ioport:f070(size=8) ioport:f060(size=4) ioport:f020(size=32) memoria:f7325000-f73257ff
+        *-serial NO RECLAMADO
+             descripción: SMBus
+             producto: 6 Series/C200 Series Chipset Family SMBus Controller
+             fabricante: Intel Corporation
+             id físico: 1f.3
+             información del bus: pci@0000:00:1f.3
+             versión: 05
+             anchura: 64 bits
+             reloj: 33MHz
+             configuración: latency=0
+             recursos: memoria:f7324000-f73240ff ioport:f000(size=32)

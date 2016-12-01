@@ -1,0 +1,8 @@
+S.ficheros     Tamaño Usado  Disp Uso% Montado en
+/dev/sda2        115G   11G   98G  10% /
+udev             2,0G  4,0K  2,0G   1% /dev
+tmpfs            402M  488K  401M   1% /run
+none             5,0M     0  5,0M   0% /run/lock
+none             2,0G  8,5M  2,0G   1% /run/shm
+/dev/sdb2         92G  188M   87G   1% /media/1a6efe53-5813-4963-868c-d2f50da315c3
+/dev/sdb1        276G  191M  261G   1% /media/1213b235-5b06-4e6b-8f40-561699f8aa32
